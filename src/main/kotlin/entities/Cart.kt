@@ -1,4 +1,8 @@
 package entities
 
-class Cart {
+import interfaces.CartInterface
+
+class Cart(
+    override var productsList: MutableList<Pair<Product, Int>> = mutableListOf()
+): CartInterface {
 }
