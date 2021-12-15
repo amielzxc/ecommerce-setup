@@ -2,9 +2,24 @@ package entities
 
 import interfaces.ProductInterface
 
-data class Product(
+class Product(
     override val productName: String,
     override val price: Int,
     override val productId: Int
-): ProductInterface {
+) : ProductInterface {
+
+
+    fun getProdName(): String {
+        return productName
+    }
+
+    fun getProdPrice(): Int {
+        return price
+    }
+
+    fun getProdId(): Int {
+        return productId
+    }
+
 }
+
